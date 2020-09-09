@@ -18,7 +18,18 @@ import { ReadyToDream3Page } from '../ready-to-dream3/ready-to-dream3';
   templateUrl: 'login.html'
 })
 export class LoginPage {
-
+  openSleepPage() {
+    this.navCtrl.push(SleepPage);
+  }
+  openRelaxPage() {
+    this.navCtrl.push(RelaxPage);
+  }
+  openFocusPage() {
+    this.navCtrl.push(FocusPage);
+  }
+  openDreamPage() {
+    this.navCtrl.push(DreamPage);
+  }
   constructor(public navCtrl: NavController) {
   }
   goToHome(params){

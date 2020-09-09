@@ -7,6 +7,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { LoginPage } from '../pages/login/login';
 import {DreamPage} from "../pages/dream/dream";
+import {RelaxPage} from "../pages/relax/relax";
+import {SleepPage} from "../pages/sleep/sleep";
 
 
 
@@ -14,9 +16,7 @@ import {DreamPage} from "../pages/dream/dream";
   templateUrl: 'app.html'
 })
 export class MyApp {
-
-    rootPage:any = DreamPage;
-
+    rootPage:any = LoginPage;
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.

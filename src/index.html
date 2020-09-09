@@ -10,10 +10,30 @@
   <link rel="icon" type="image/x-icon" href="assets/icon/favicon.ico">
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#4e8ef7">
-  
+
   <!-- cordova.js required for cordova apps -->
   <script src="cordova.js"></script>
+  <style>
+    .progress-outer {
+      width: 100%;
+      margin: 14px 0%;
+      padding: 3px;
+      text-align: center;
+      background-color: #f4f4f4;
+      border: 1px solid #dcdcdc;
+      color: #fff;
+      border-radius: 20px;
+    }
 
+    .progress-inner {
+      min-width: 1%;
+      white-space: nowrap;
+      overflow: hidden;
+      padding: 5px;
+      border-radius: 20px;
+      background-color: green;
+    }
+  </style>
   <!-- un-comment this code to enable service worker
   <script>
     if ('serviceWorker' in navigator) {

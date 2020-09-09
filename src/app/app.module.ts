@@ -22,6 +22,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { Media } from '@ionic-native/media';
 import { File } from '@ionic-native/file';
+import { ProgressBarComponent } from '../components/progress-bar/progress-bar';
 import { FileTransfer, FileUploadOptions, FileTransferObject } from '@ionic-native/file-transfer';
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { FileTransfer, FileUploadOptions, FileTransferObject } from '@ionic-nati
     SleepPage,
     DreamPage,
     AnimationExamplesPage,
-    ReadyToDream3Page
+    ReadyToDream3Page,
+    ProgressBarComponent
   ],
   imports: [
     BrowserModule,

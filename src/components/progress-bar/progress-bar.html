@@ -1,0 +1,25 @@
+<div *ngIf="type == 'downloading'">
+  <div class="progress-outer" >
+    <div class="progress-inner" [style.width]="progress + '%'">
+      {{ progress  | number : '1.2-2' }} %
+    </div>
+  </div>
+</div>
+<div *ngIf="type == 'playing'">
+  <ion-grid>
+    <ion-row>
+      <ion-col col-2>
+        <p style="position: absolute; right: 0">{{ currentDuration }}</p>
+      </ion-col>
+      <ion-col col-8>
+        <div class="progress-outer">
+          <div class="progress-inner" [style.width]="progress + '%'">
+          </div>
+        </div>
+      </ion-col>
+      <ion-col col-2>
+        <p style="position: absolute;">{{ totalDuration }}</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>

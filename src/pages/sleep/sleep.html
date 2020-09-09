@@ -1,1 +1,20 @@
-<ion-content style="background:url(assets/img/uzsaMgAwRQeIGbn4ZjEh_blank20SLEEP20SCREENSHOT.png) no-repeat center;background-size:cover;" id="page13"></ion-content>
+<ion-content style="background:url(assets/img/uzsaMgAwRQeIGbn4ZjEh_blank20SLEEP20SCREENSHOT.png) no-repeat center;background-size:cover;" id="page13">
+  <div style="margin-top: 77vh;">
+    <progress-bar [progress]="loadProgress" [totalDuration]="totalDuration" [currentDuration]="currentDuration" type="playing" *ngIf="downloadStatus && playing"></progress-bar>
+    <progress-bar [progress]="loadProgress" type="downloading" *ngIf="downloading"></progress-bar>
+    <ion-grid>
+      <ion-col col-4 offset-4 style="margin-top: -25px;">
+        <button (click)="play()" *ngIf="downloadStatus && !playing" ion-button color="light" round block style="height: 100px; width: 173px; font-size: 80px;">
+          <ion-icon name="play"></ion-icon>
+        </button>
+        <button (click)="pause()" *ngIf="downloadStatus && playing" ion-button color="light" round block style="height: 100px; width: 173px; font-size: 80px;">
+          <ion-icon name="pause"></ion-icon>
+        </button>
+        <button (click)="download()" *ngIf="!downloadStatus" ion-button color="light" round block style="height: 100px; width: 173px; font-size: 80px;">
+          <ion-icon name="cloud-download"></ion-icon>
+        </button>
+      </ion-col>
+    </ion-grid>
+    <!--    <ion-buttons ion-button color="danger" (click)="testing()">Hello</ion-buttons>-->
+  </div>
+</ion-content>
