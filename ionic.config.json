@@ -1,0 +1,7 @@
+{
+  "name": "dreamRings",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
